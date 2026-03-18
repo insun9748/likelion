@@ -1,0 +1,12 @@
+.container{
+        width:1980px;
+        height:1081px;
+    }
+
+.box{
+    width: 250px;
+    height: 100px;
+    color:#EEEEE9;
+    left: 638px;
+    top:209px;
+}
