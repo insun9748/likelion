@@ -1,12 +1,47 @@
-.container{
-        width:1980px;
-        height:1081px;
+.wrap{
+        width:1250px;
+        margin: 0 auto;
     }
 
-.box{
+header{
+    display: flex;
+}
+
+.logo{
     width: 250px;
     height: 100px;
-    color:#EEEEE9;
-    left: 638px;
-    top:209px;
+    background-color: #EEEEE9;
+}
+
+.nav{
+    width: 1000px;
+    height: 100px;
+    background-color: #D6CCC2;
+}
+
+.main_top{
+    width: 100%;
+    height: 440px;
+    background-color: #F5ECE1;
+}
+
+.main_bot{
+    display: flex;
+}
+
+.left{
+    width: 625px;
+    height: 440px;
+    background-color: #E4D6CA;
+}
+.right{
+    width: 625px;
+    height: 440px;
+    background-color: #D5BEB1;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color:#D6CCC2;
 }
