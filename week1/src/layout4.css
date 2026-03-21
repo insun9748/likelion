@@ -1,0 +1,126 @@
+.wrap{
+        width:1300px;
+        margin: 0 auto;
+    }
+
+header{
+    display: flex;
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    background-color: #EAE9EE;
+}
+
+.nav{
+    width: 1080px;
+    height: 100px;
+    background-color: #C2C3D6;
+}
+
+/*여기부터 메인*/
+
+main{
+    display: block;
+}
+.up{
+    display: flex;
+}
+.left{
+    width: 250px;
+    height: 440px;
+    background-color: #E1E1F5;
+}
+.right{
+    display: block;
+}
+.right_up{
+    display: flex;
+}
+.right_up1{
+    width: 730px;
+    height: 220px;
+    background-color: #C0C0FB;
+}
+.right_up2{
+    width: 300px;
+    height: 220px;
+    background-color: #7878D4;
+}
+.right_down{
+    display: flex;
+}
+.right_down1{
+    width: 280px;
+    height: 220px;
+    background-color: #9999EF;
+}
+.right_down2{
+    width: 750px;
+    height: 220px;
+    background-color: #CACBE4;
+}
+.down{
+    display: flex;
+}
+.d_left{
+    display: flex;
+}
+.d_left1{
+    width: 177px;
+    height: 440px;
+    background-color: #7878D4;
+}
+.d_left2{
+    width: 176px;
+    height: 440px;
+    background-color: #353AC2;
+}
+.d_left3{
+    width: 177px;
+    height: 440px;
+    background-color: #0D1163;
+}
+.d_right{
+    display: block;
+}
+.d_right_up{
+    width: 750px;
+    height: 242px;
+    background-color: #666CEE;
+}
+.d_right_down{
+    display: flex;
+}
+.d_right_down1{
+    width: 372px;
+    height: 198px;
+    background-color: #7D7FA7;
+}
+.d_right_down2{
+    width: 378px;
+    height: 198px;
+    background-color: #4C4F8C;
+}
+
+/*여기부터 푸터*/
+
+footer{
+   display: flex;
+}
+.footer_left{
+    width: 200px;
+    height: 100px;
+    background-color: #3A258A;
+}
+.footer_mid{
+    width: 880px;
+    height: 100px;
+    background-color: #6469CD;
+}
+.footer_right{
+    width: 200px;
+    height: 100px;
+    background-color: #3A258A;
+}
