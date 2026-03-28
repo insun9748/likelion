@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+        width:1250px;
+        margin: 0 auto;
+    }
+
+header{
+    display: flex;
+}
+
+.logo{
+    width: 250px;
+    height: 100px;
+    background-color: #54D8DC;
+}
+
+.nav{
+    width: 1000px;
+    height: 100px;
+    background-color: #86DADC;
+}
+
+
+
+main{
+    display: flex;
+}
+
+.left img{
+    width: 415px;
+    height: 880px;
+    object-fit: cover;
+}
+.mid img{
+    width: 416px;
+    height: 880px;
+    object-fit: cover;
+}
+.right img{
+    width: 416px;
+    height: 880px;
+    object-fit: cover;
+}
+
+
+footer{
+   display: flex;
+}
+.footer_logo{
+    width: 250px;
+    height: 100px;
+    background-color: #FDE1E0;
+}
+.footer_info{
+    display: block;
+}
+.footer_up{
+    width: 1000px;
+    height: 50px;
+    background-color: #FECECE;
+}
+.footer_down{
+    width: 1000px;
+    height: 50px;
+    background-color: #FDB2B5;
+}
+
+
+@media (max-width: 680px) {
+    main{
+        flex-direction: column;
+    }
+    header{
+        flex-direction: column;
+    }
+    .logo{
+    width: 680px;
+    height: 100px;
+    background-color: #54D8DC;
+    }
+
+    .nav{
+    width: 680px;
+    height: 100px;
+    background-color: #86DADC;
+    }
+
+    .left img, .right img{
+        width: 680px;
+        height: 225px;
+        object-fit: cover;
+        display: block;
+    }
+     .mid img{
+        width: 680px;
+        height: 230px;
+        object-fit: cover;
+        display: block;
+    }
+
+    footer{
+   flex-direction: column;
+    }
+
+    .footer_logo{
+        width: 680px;
+        height: 100px;
+        background-color: #FDE1E0;
+    }
+    
+    .footer_up, .footer_down{
+        width: 680px;
+        height: 50px;
+    
+    }
+    
+        
+    .wrap {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    main{
+        flex-direction: column;
+    }
+    header{
+        flex-direction: column;
+    }
+    .logo{
+        width: 450px;
+        height: 100px;
+        background-color: #54D8DC;
+    }
+
+    .nav{
+        width: 450px;
+        height: 100px;
+        background-color: #86DADC;
+    }
+
+    .left img, .mid img{
+        width: 450px;
+        height: 340px;
+        object-fit: cover;
+        display: block;
+    }
+    .right {
+        display: none;
+    }
+
+    .footer_logo{
+        width: 450px;
+        height: 200px;
+        background-color: #FDE1E0;
+    }
+    .footer_up, .footer_down{
+        display: none;
+    }
+        
+    .wrap {
+        width: 100%;
+    }
+}
