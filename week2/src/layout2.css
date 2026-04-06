@@ -1,232 +1,208 @@
-body{
-    margin: 0;
-}
-
-.wrap{
+.wrap {
     width: 1280px;
+    height: 1080px;
     margin: 0 auto;
 }
-    
-header{
+header {
     display: flex;
-    width: 100%;
-}
-
-.logo{
-    width: 200px;
     height: 100px;
+}
+.logo {
+    width: 200px;
+    height: 100%;
     background-color: #EAE9EE;
 }
-
-.nav{
+.nav {
     width: 1080px;
-    height: 100px;
+    height: 100%;
     background-color: #C2C3D6;
 }
-
-main{
-    display: flex;  
-    width: 100%;
-}
-
-.section{
+main {
+    width: 1280px;
+    height: 880px;
     display: flex;
+}
+section {
     width: 980px;
     height: 880px;
-}
-
-.section_left{
     display: flex;
     flex-direction: column;
-    width: 980px;
-    height: 880px;
 }
-
-.section_top{
+.section_top {
+    width: 980px;
+    height: 440px;
     display: flex;
 }
-
-.top_left img{
+.left {
     width: 250px;
     height: 440px;
-    object-fit: cover;
-    display: block;
+    background-image: url(img/layout2_1.png);
+    background-size: cover;
 }
-.top_right img{
-    display: block;
+.right {
+    width: 730px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
 }
-.right_top img{
+.right > .top {
     width: 730px;
     height: 220px;
-    object-fit: cover;
-    display: block;
+    background-image: url(img/layout2_2.png);
+    background-size: cover;
 }
-.right_bot img{
+.right > .bot {
     width: 730px;
     height: 220px;
-    object-fit: cover;
-    display: block;
+    background-image: url(img/layout2_3.png);
+    background-size: cover;
 }
-.section_bot img{
+.section_bot {
     width: 980px;
     height: 440px;
-    object-fit: cover;
-    display: block;
+    background-image: url(img/layout2_4.png);
+    background-size: cover;
 }
-
-aside img{
+.aside {
     width: 300px;
     height: 880px;
-    object-fit: cover;
-    display: block;
+    background-image: url(img/layout2_5.png);
+    background-size: cover;
 }
-
-footer{
+footer {
+    height: 100px;
     display: flex;
-    width: 100%;
-    height: 100px;
 }
-
-.footer_left{
+footer > .footer_left, footer > .footer_right {
     width: 200px;
-    height: 100px;
+    height: 100%;
     background-color: #3A258A;
 }
-.footer_center{
+footer > .footer_mid {
     width: 880px;
-    height: 100px;
+    height: 100%;
     background-color: #6469CD;
 }
-.footer_right{
-    width: 200px;
-    height: 100px;
-    background-color: #3A258A;
-}
 
 
-@media (max-width: 683px) {
-    main{
-        flex-direction: column;
+@media (max-width: 768px) {
+    .wrap { 
+        width: 680px; 
+        height: 1080px; 
     }
     .logo{
-    width: 200px;
-    height: 100px;
+        width: 200px;
     }
-    .nav{
-    width: 483px;
-    height: 100px;
+    .nav { 
+        width: 480px; 
     }
-
-    section{
-    display: flex;
-    flex-direction: column-reverse;
-    width: 683px;
-    height: 880px;
-    }
-  
-    .section_bot{
-        width: 100%;
-        height: 440px;    
-    }
-    .right_bot, .right_top{
-        width: 100%;
-        height: 220px;
-    }
-    .top_left{
-        display: none;
-    }
-    aside{
-        display: none;
-    }
-    .footer_left{
-    width: 106px;
-    height: 100px;
-    background-color: #3A258A;  
-    }
-    .footer_center{
-    width: 468px;
-    height: 100px;
-    background-color: #6469CD;
-    }
-    .footer_right{
-    width: 106px;
-    height: 100px;
-    background-color: #3A258A;
-    }
-     .wrap {
-        width: 100%;
-    }
-
-}
-
-
-@media (max-width: 450px) {
-    header {
-        flex-direction: row-reverse;
-    }
-    .logo {
-        width: 100px;
-        height: 100px;
-    }
-    .nav {
-        width: 350px;
-        height: 100px;
-    }
-
-    .section_top {
-        display: flex;
+    main { 
+        width: 680px; 
+        height: 880px; 
         flex-direction: column;
     }
-
-    .top_left {
-        order: 2; 
+    section { 
+        width: 680px; 
+        height: 880px; 
     }
-    .top_right {
-        order: 1; 
-    }
-    .section_top {
-        display: column;
-    }
-    .top_left img {
-        width: 225px;
-        height: 400px;
-        object-fit: cover;
-        display: block;
-    }
-    .top_right{
-        flex-direction: column-reverse;
-    }
-    .right_top img {
-        width: 450px;
-        height: 220px;
-        object-fit: cover;
-    }
-    .right_bot img{
-        width: 225px;
+    .section_top { 
+        width: 680px; 
         height: 440px;
-        object-fit: cover;
+    }
+    .left { 
+        display: none; 
+    }
+    .right { 
+        width: 680px; 
+        height: 440px; 
+    }
+    .right > .bot { 
+        order: 1; 
+        width: 680px; 
+        height: 220px; 
+    }
+    .right > .top { 
+        order: 2;
+        width: 680px;
+        height: 220px; 
     }
     .section_bot {
-        display: flex;
+        order: -1; 
+        width: 680px; 
+        height: 440px; 
     }
-    .section_bot img {
-        width: 225px;
-        height: 225px;
-        object-fit: cover;
+    .aside { 
+        display: none; 
     }
-    aside img {
-        width: 225px;
-        height: 225px;
-        object-fit: cover;
-        display: block;
+    footer > .footer_left, footer > .footer_right  { 
+        width: 106px; 
     }
-    .footer_left, .footer_right {
-        display: none;
+    footer > .footer_mid { 
+        width: 468px; 
     }
-    .footer_center {
-        width: 450px;
+}
+
+@media (max-width: 480px) {
+    .wrap { 
+        width: 450px; 
+        height: 1080px; 
     }
-    .wrap {
+    .logo { 
+        width: 100px;
+        order: 2; 
+    }
+    .nav { 
+        width: 350px; 
+        order: 1; 
+    }
+    main { 
+        width: 450px; 
+        height: 880px; 
+        display: flex; 
+        flex-wrap: wrap; 
+        flex-direction: row; 
+    }
+    section { 
+        display: contents; 
+    }
+    .section_top { 
+        display: contents;
+    }
+    .right { 
+        display: contents; 
+    }
+    .left { 
+        width: 225px; 
+        height: 440px; 
+        order: 1; 
+        display: block; 
+    }
+    .right > .bot { 
+        width: 225px; 
+        height: 440px; 
+        order: 2; 
+    }
+    .right > .top { 
+        width: 450px; 
+        height: 220px; 
+        order: 3; 
+    }
+    .section_bot {
+        width: 225px; 
+        height: 220px; 
+        order: 4; 
+    }
+    .aside { 
+        display: block; 
+        width: 225px; 
+        height: 220px;
+        order: 5; 
+    }
+    footer > .footer_left, footer > .footer_right  {
+        display: none; 
+    }
+    footer > .footer_mid { 
         width: 100%;
     }
 }
+ 

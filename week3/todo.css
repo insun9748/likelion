@@ -1,0 +1,118 @@
+/* 전체 배경 */
+body {
+    background-color: #92CAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 1980px;
+    height: 1080px;
+}
+
+/* 전체 감싸는 박스 */
+.wrap {
+    width: 600px;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 제목 */
+.title img {
+    display: block;
+    margin: 0 auto;  
+    margin-bottom: 40px;
+}
+
+/* 입력창+버튼 묶음 */
+.add {
+    background-color: white;
+    width: 600px;
+    height: 70px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 25px;
+    margin-bottom: 40px;
+}
+
+/* 입력창 */
+.addvalue {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    color: #A3A3A3;
+}
+
+/* + 버튼 */
+#addbtn {
+    background: none;   /* 버튼 기본 배경 제거 */
+    border: none;       /* 버튼 기본 테두리 제거 */
+    cursor: pointer;    /* 마우스 올리면 손가락 커서 */
+}
+
+#addbtn img {
+    width: 30px;        /* 이미지 크기 조절 */
+    height: 30px;
+}
+
+/* 할 일 목록 전체 박스 */
+main {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    width: 600px;
+    height: 340px;
+    padding: 10px 20px;
+}
+
+/* 할 일 한 줄 */
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #92CAFF;
+}
+
+/* 체크박스 + 텍스트 묶음 */
+.leftBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkBox {
+    appearance: none; 
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #92CAFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.checkBox:checked {
+    background-color: #92CAFF;  /* 체크되면 파란색으로 채워짐 */
+    border: 1px solid #92CAFF;
+}
+
+/* 텍스트 */
+.todoText {
+    margin: 0;
+    color: #3F6181;
+    font-size: 18px;
+}
+
+/* 삭제 버튼 */
+.removeBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #87CEEB;
+    font-size: 18px;
+}
