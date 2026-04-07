@@ -93,14 +93,12 @@ main {
     border: 1px solid #92CAFF;
 }
 
-/* 텍스트 */
 .todoText {
     margin: 0;
     color: #3F6181;
     font-size: 18px;
 }
 
-/* 삭제 버튼 */
 .removeBtn {
     background: none;
     border: none;
