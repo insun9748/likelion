@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+box-sizing: border-box;
+font-family: 'NanumSquareNeo-Variable';
+
+}
+
+button{
+    cursor: pointer;
+}
+
+body{
+    background-color: #92CAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow:hidden;
+}
+
+#Button_Wrap{
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    border: solid 6px #92CAFF;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title{
+        font-weight: bold;
+        color:#49A1F1;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+
+#Write_Wrap{
+    width: 1000px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px 61px;
+
+    input,textarea{
+        width: 100%;
+        border: 3px solid #49A1F1;
+        font-size: 20px;
+        padding: 20px 30px;
+        border-radius: 10px;
+    }
+
+    ::placeholder{
+        color: #49A1F1;
+        font-weight: bold;
+        font-family: 'NanumSquareNeo-Variable';
+    }
+    .title{
+            margin-bottom:20px;
+    }
+
+    .content{
+        width: 100%;
+        resize: none;
+        height: 534px;  
+        margin-bottom: 30px;
+    }
+
+    .button_group{
+        display: flex;
+        justify-content: space-between;
+
+        button{
+            width: 259px;
+            height: 66px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        
+
+        .delete{
+            border: solid 4px #49A1F1;
+            background-color: #fff;
+            border: solid 4px #49A1F1;
+        }
+
+        .write{
+            color: #fff;
+            background-color: #92CAFF;
+            border: none;
+        }
+    }
+}
+
+#Article_Wrap{
+
+    width: 1000px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px 61px;
+
+
+    .article{
+
+
+    h1{
+        margin-top: 70px;
+        font-size: 32px;
+        font-weight: bold;
+        color:#49A1F1;
+        border-bottom: solid 4px #49A1F1;
+    }
+
+    p{
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #49A1F1;
+    }
+
+    }
+
+    .icon_group{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap:7px;
+
+        padding-bottom: 2px;
+        border-bottom: solid 4px #49A1F1;
+
+        font-size: 30px;
+        font-weight: bold;
+        color: #49A1F1;
+
+
+    }
+
+    footer {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+
+        input {
+            flex: 1;
+            border: 3px solid #49A1F1;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 137px;
+            height: 65px;
+            background-color: #92CAFF;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
