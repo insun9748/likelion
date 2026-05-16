@@ -1,0 +1,28 @@
+.section2_wrap {
+    background-color: #FF7710;
+    height: 530px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .mission {
+        font-size: 18px;
+        font-weight: bolder;
+        margin-bottom: 60px;
+    }
+
+    .people {
+        font-size: 36px;
+        font-weight: bolder;
+        margin-bottom: 20px;
+    }
+
+    .connect {
+        font-size: 36px;
+        font-weight: bolder;
+    }
+
+
+}
