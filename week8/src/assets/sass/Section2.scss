@@ -1,0 +1,129 @@
+.Section2_wrap {
+    width: 100%;
+    padding: 60px 50px;
+    box-sizing: border-box;
+
+    .section2_title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 34px;
+        color: #000;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .tag_list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 32px;
+
+        .tag {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            color: #000;
+            cursor: pointer;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+
+            &.active {
+                border-bottom: 2px solid #000;
+            }
+
+            &:hover {
+                border-bottom: 2px solid #000;
+            }
+        }
+    }
+
+    .slider_wrap {
+        .slick-slide {
+            padding: 0 6px;
+            box-sizing: border-box;
+        }
+
+        .slick-list {
+            margin: 0 -6px;
+        }
+
+        .slick-prev,
+        .slick-next {
+            width: 36px;
+            height: 36px;
+            z-index: 1;
+
+            &::before {
+                font-size: 36px;
+                color: #000;
+            }
+        }
+
+        .slick-prev {
+            left: -44px;
+        }
+
+        .slick-next {
+            right: -44px;
+        }
+    }
+
+    .product_card {
+        cursor: pointer;
+
+        .img_wrap {
+            position: relative;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 460px;
+                object-fit: cover;
+                display: block;
+            }
+
+            .heart_btn {
+                position: absolute;
+                bottom: 12px;
+                right: 12px;
+                background: none;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                color: #fff;
+                line-height: 1;
+            }
+        }
+
+        .product_info {
+            padding: 12px 0 0;
+
+            .category {
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                font-size: 13px;
+                color: #979797;
+                margin: 0 0 4px;
+            }
+
+            .product_name {
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                color: #000;
+                margin: 0 0 4px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .price {
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+                color: #000;
+                margin: 0;
+            }
+        }
+    }
+}

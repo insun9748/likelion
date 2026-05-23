@@ -1,0 +1,40 @@
+.Section4_wrap {
+    width: 100%;
+    padding: 60px 101px;
+    box-sizing: border-box;
+
+    .insta_handle {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 34px;
+        color: #000;
+        text-align: right;
+        margin: 0 0 24px;
+    }
+
+    .insta_grid {
+        display: grid;
+        grid-template-columns: repeat(5, 330px);
+        grid-template-rows: repeat(2, 330px);
+        gap: 17px;
+        justify-content: center;
+
+        .insta_item {
+            width: 330px;
+            height: 330px;
+            overflow: hidden;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
