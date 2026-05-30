@@ -1,0 +1,67 @@
+.trans_wrap {
+    padding: 20px;
+    background-color: #F8F8F9;
+    min-height: 100%;
+}
+
+.creat_btn img {
+    width: 6px;
+    height: 12px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 175px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.trans_item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+.trans_item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.trans_text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    position: relative;
+}
+
+.trans_time {
+    margin-top: -8px;
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.trans_text p {
+    font-size: 15px;
+    color: #222;
+    margin: 0;
+    padding-top: 4px;
+    line-height: 1.5;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #000000;
+  margin: 20px 0;
+}

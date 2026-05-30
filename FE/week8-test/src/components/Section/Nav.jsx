@@ -16,7 +16,6 @@ const Nav = () => {
                 <li>서비스 소개</li>
                 <li>미디어</li>
                 <li>채용</li>
-
             </ul>
 
 

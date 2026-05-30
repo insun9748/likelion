@@ -1,0 +1,87 @@
+.account_container {
+    justify-content: flex-start;
+    padding-top: 60px;
+}
+
+.account_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 40px;
+    position: relative;
+}
+
+
+.creat_btn img {
+    width: 6px;
+    height: 12px;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.text1 h1{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.text2 p{
+    text-align: center;
+    font-size: 17px;
+    color: #888888;
+}
+
+.login {
+    margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login input {
+  padding: 14px 16px;
+  border-radius: 15px;
+  border: 1.5px solid #ccc;
+  font-size: 15px;
+  outline: none;
+}
+
+.login input:focus {
+  border-color: #828282;
+}
+
+
+
+.create_btn {
+    width: 323px;
+    height: 60px;
+    background-color: #31A062;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login p {
+    margin-top: -100px;
+    font-size: 17px;
+    color: #31A062;
+    text-align: center;
+}
