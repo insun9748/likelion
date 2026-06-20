@@ -1,0 +1,267 @@
+/* ===== Gallery ===== */
+.gallery {
+    position: relative;
+    height: 390px;
+    margin: 8px 16px 0;
+    background: #efefef;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery .expand {
+    position: absolute;
+    right: 12px;
+    bottom: 40px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery .expand svg {
+    width: 16px;
+    height: 16px;
+}
+
+.gallery-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 14px;
+}
+
+.gallery-dots span {
+    border-color: var(--placeholder);
+}
+
+.gallery-dots span.on {
+    background: var(--placeholder);
+}
+
+/* ===== Info ===== */
+.detail-info {
+    padding: 20px 16px 16px;
+}
+
+.brand-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-line h3 {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.brand-line .share svg {
+    width: 22px;
+    height: 22px;
+}
+
+.detail-info .title {
+    margin-top: 6px;
+    font-size: 16px;
+    color: var(--body);
+}
+
+.detail-info .price {
+    margin-top: 4px;
+    font-size: 16px;
+    color: var(--primary);
+}
+
+.opt-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.opt-label {
+    font-size: 14px;
+    color: var(--label);
+    width: 40px;
+}
+
+.colors {
+    display: flex;
+    gap: 10px;
+}
+
+.colors .c {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.colors .c.on {
+    outline: 1px solid #999;
+    outline-offset: 2px;
+}
+
+.detail-info .sizes {
+    display: flex;
+    gap: 10px;
+}
+
+.detail-info .size {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: var(--body);
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.detail-info .size.on {
+    border-color: var(--title-active);
+    color: var(--title-active);
+}
+
+/* ===== Basket bar ===== */
+.basket-bar {
+    display: flex;
+    height: 56px;
+    margin-top: 8px;
+}
+
+.basket-bar .add {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--title-active);
+}
+
+.basket-bar .add .plus {
+    font-size: 20px;
+}
+
+.basket-bar .fav {
+    width: 64px;
+    background: var(--title-active);
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basket-bar .fav img {
+    width: 14.67px;
+    height: 13px;
+    display: block;
+}
+
+/* ===== Materials / Care text ===== */
+.detail-text {
+    padding: 28px 16px 8px;
+}
+
+.detail-text h4 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--title-active);
+    margin-bottom: 10px;
+}
+
+.detail-text h4:not(:first-child) {
+    margin-top: 28px;
+}
+
+.detail-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--body);
+}
+
+.care-icons {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.care-icons li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+    color: var(--body);
+}
+
+.care-icons .i {
+    font-size: 18px;
+    color: var(--label);
+}
+
+/* ===== Accordion ===== */
+.accordion {
+    padding: 24px 16px 8px;
+}
+
+.acc-item {
+    border-bottom: 1px solid var(--line);
+}
+
+.acc-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 0;
+    font-size: 14px;
+    color: var(--body);
+    text-align: left;
+}
+
+.acc-head .acc-ico {
+    font-size: 16px;
+}
+
+.acc-head .chev {
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+    transition: transform 0.2s;
+}
+
+.acc-body {
+    display: none;
+    padding: 0 0 16px 30px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--label);
+}
+
+.acc-item.open .acc-body {
+    display: block;
+}
+
+/* ===== Also like ===== */
+.also-like {
+    padding: 32px 0 40px;
+}
+
+.also-like .product-grid {
+    margin-top: 24px;
+    row-gap: 24px;
+}

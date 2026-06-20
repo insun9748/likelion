@@ -1,0 +1,47 @@
+.contact-title {
+    margin-top: 24px;
+}
+
+.contact-block {
+    text-align: center;
+    padding: 40px 16px 0;
+}
+
+.contact-block .c-ico {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-block .c-ico img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+}
+
+.contact-block p {
+    margin: 18px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--body);
+}
+
+.contact-block .c-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 44px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--title-active);
+}
+
+.contact .footer {
+    margin-top: 40px;
+}

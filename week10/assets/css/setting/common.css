@@ -1,0 +1,84 @@
+button,
+a {
+    cursor: pointer;
+}
+
+body {
+    background-color: #404040;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+.container {
+    position: relative;
+    width: 375px;
+    background-color: var(--off-white);
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.none {
+    display: none !important;
+}
+
+input {
+    outline: none;
+}
+
+/* shared section title : centered label + diamond divider */
+.sec-title {
+    text-align: center;
+    padding: 8px 0 0;
+}
+
+.sec-title h2 {
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--title-active);
+}
+
+.divider {
+    width: 125px;
+    height: 1px;
+    margin: 0 auto;
+    background: var(--label);
+    position: relative;
+}
+
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    background: var(--off-white);
+    border: 1px solid var(--label);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* diamond dot indicator */
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dots span {
+    width: 6px;
+    height: 6px;
+    border: 1px solid var(--placeholder);
+    transform: rotate(45deg);
+}
+
+.dots span.on {
+    background: var(--placeholder);
+}

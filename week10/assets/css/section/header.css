@@ -1,0 +1,71 @@
+/* ===== Shared Header ===== */
+.header {
+    position: relative;
+    z-index: 10;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background: var(--header-bg);
+}
+
+.header.plain {
+    background: var(--white);
+}
+
+.header .icon-btn {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--title-active2);
+}
+
+.header .icon-btn svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.header .right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* logo wordmark */
+.logo {
+    text-align: center;
+    line-height: 0.92;
+    letter-spacing: 0.5px;
+    opacity: 0.85;
+    color: var(--title-active);
+}
+
+.logo .o {
+    font-size: 18px;
+}
+
+.logo .f {
+    font-size: 18px;
+    display: block;
+    margin-top: 2px;
+}
+
+.logo--lg .o,
+.logo--lg .f {
+    font-size: 22px;
+}
+
+/* logo image (header wordmark) */
+.logo img {
+    display: block;
+    width: 88px;
+    height: auto;
+}
+
+.logo--lg img {
+    width: 112px;
+}

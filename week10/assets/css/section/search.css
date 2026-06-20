@@ -1,0 +1,49 @@
+.container.search {
+    background: var(--white);
+    padding: 0 16px;
+    min-height: 600px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 24px 0 16px;
+    border-bottom: 1px solid var(--title-active);
+}
+
+.search-bar .s-ico {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 auto;
+}
+
+.search-bar input {
+    flex: 1;
+    font-size: 16px;
+    color: var(--body);
+    background: transparent;
+}
+
+.search-bar .close {
+    width: 24px;
+    height: 24px;
+}
+
+.search-bar .close svg {
+    width: 24px;
+    height: 24px;
+}
+
+.popular-label {
+    margin: 24px 0 8px;
+    font-size: 14px;
+    color: var(--placeholder);
+}
+
+.popular-list li a {
+    display: block;
+    padding: 12px 0;
+    font-size: 16px;
+    color: var(--body);
+}

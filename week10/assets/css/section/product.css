@@ -1,0 +1,172 @@
+/* ===== Product list bar ===== */
+.list-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px;
+}
+
+.list-bar .count {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: var(--body);
+}
+
+.list-bar .controls {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.list-bar .sort {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: var(--body);
+    background: var(--input-bg);
+    border-radius: 20px;
+}
+
+.list-bar .sort svg {
+    width: 14px;
+    height: 14px;
+}
+
+.list-bar .grid-toggle svg,
+.list-bar .filter svg {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+/* ===== Product rows ===== */
+.prod-list {
+    padding: 0 16px;
+}
+
+.prod-row {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    padding: 14px 0;
+}
+
+.row-thumb {
+    flex: 0 0 92px;
+    height: 110px;
+    background: #efefef;
+    overflow: hidden;
+}
+
+.row-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row-info {
+    flex: 1;
+}
+
+.row-info .brand {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--body);
+}
+
+.row-info .title {
+    margin-top: 2px;
+    font-size: 14px;
+    color: var(--body);
+}
+
+.row-info .price {
+    margin-top: 4px;
+    font-size: 15px;
+    color: var(--primary);
+}
+
+.row-info .rating {
+    margin-top: 6px;
+    font-size: 13px;
+    color: var(--body);
+}
+
+.row-info .rating .star {
+    color: var(--primary);
+}
+
+.row-info .sizes {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.row-info .size-label {
+    font-size: 13px;
+    color: var(--label);
+    margin-right: 2px;
+}
+
+.row-info .size {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: var(--body);
+    border: 1px solid var(--line);
+    border-radius: 50%;
+}
+
+.like {
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+    width: 24px;
+    height: 24px;
+}
+
+.like img {
+    width: 14.67px;
+    height: 13px;
+    display: block;
+}
+
+/* ===== Pagination ===== */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 28px 0 40px;
+}
+
+.pagination a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--body);
+    background: var(--input-bg);
+}
+
+.pagination a.on {
+    color: var(--white);
+    background: var(--title-active);
+}
+
+.pagination .next {
+    background: transparent;
+}
+
+.pagination .next svg {
+    width: 18px;
+    height: 18px;
+}

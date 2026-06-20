@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Open Fashion — Blog</title>
+</head>
+
+<body>
+    <div class="container blog">
+
+        <!-- Header -->
+        <header class="header plain">
+            <a href="menu.html" class="icon-btn" aria-label="menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#14142B" stroke-width="1">
+                    <line x1="3" y1="7" x2="21" y2="7" /><line x1="3" y1="12" x2="13" y2="12" /><line x1="3" y1="17" x2="21" y2="17" />
+                </svg>
+            </a>
+            <a href="home.html" class="logo"><img src="../assets/src/img/logo.png" alt="Open Fashion"></a>
+            <div class="right">
+                <a href="search.html" class="icon-btn" aria-label="search">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#14142B" stroke-width="1"><circle cx="11" cy="11" r="7" /><line x1="16" y1="16" x2="21" y2="21" /></svg>
+                </a>
+                <a href="checkout.html" class="icon-btn" aria-label="bag">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#14142B" stroke-width="1"><path d="M5 8h14l-1 13H6L5 8z" /><path d="M9 8V6a3 3 0 0 1 6 0v2" /></svg>
+                </a>
+            </div>
+        </header>
+
+        <div class="sec-title blog-title"><h2>Blog</h2><div class="divider"></div></div>
+
+        <!-- Category tags -->
+        <div class="blog-tags">
+            <span class="on">Fashion</span>
+            <span>Promo</span>
+            <span>Policy</span>
+            <span>Lookbook</span>
+            <span>Sale</span>
+        </div>
+
+        <!-- Posts -->
+        <ul class="post-list"></ul>
+
+        <a href="#" class="blog-loadmore">
+            Load More
+            <svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </a>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="socials"><img class="social-img" src="../assets/src/img/social.png" alt="Twitter, Instagram, YouTube"></div>
+            <div class="divider"></div>
+            <p class="contact">support@openui.design<br>+60 825 876<br>08:00 - 22:00 - Everyday</p>
+            <div class="divider"></div>
+            <nav class="nav-links"><a href="story.html">About</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a></nav>
+            <p class="copyright">Copyright© OpenUI All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const posts = [15, 16, 17, 18];
+        document.querySelector('.post-list').innerHTML = posts.map(n => `
+            <li class="post">
+                <div class="post-img">
+                    <img src="../assets/src/img/${n}.png" alt="2021 Style Guide: The Biggest Fall Trends">
+                </div>
+                <div class="post-meta">
+                    <span class="ptags"><em>#Fashion</em><em>#Tips</em></span>
+                    <span class="ptime">4 days ago</span>
+                </div>
+            </li>`).join('');
+    </script>
+</body>
+
+</html>

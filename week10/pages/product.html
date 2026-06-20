@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Open Fashion — Apparel</title>
+</head>
+
+<body>
+    <div class="container product">
+
+        <!-- Header -->
+        <header class="header plain">
+            <a href="menu.html" class="icon-btn" aria-label="menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#14142B" stroke-width="1">
+                    <line x1="3" y1="7" x2="21" y2="7" /><line x1="3" y1="12" x2="13" y2="12" /><line x1="3" y1="17" x2="21" y2="17" />
+                </svg>
+            </a>
+            <a href="home.html" class="logo"><img src="../assets/src/img/logo.png" alt="Open Fashion"></a>
+            <div class="right">
+                <a href="search.html" class="icon-btn" aria-label="search">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#14142B" stroke-width="1"><circle cx="11" cy="11" r="7" /><line x1="16" y1="16" x2="21" y2="21" /></svg>
+                </a>
+                <a href="checkout.html" class="icon-btn" aria-label="bag">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#14142B" stroke-width="1"><path d="M5 8h14l-1 13H6L5 8z" /><path d="M9 8V6a3 3 0 0 1 6 0v2" /></svg>
+                </a>
+            </div>
+        </header>
+
+        <!-- Filter bar -->
+        <div class="list-bar">
+            <span class="count">4500 APPAREL</span>
+            <div class="controls">
+                <button class="sort">New
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.2"><polyline points="6 9 12 15 18 9" /></svg>
+                </button>
+                <button class="grid-toggle" aria-label="grid view">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.2"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><rect x="14" y="14" width="6" height="6"/></svg>
+                </button>
+                <button class="filter" aria-label="filter">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.2"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/><circle cx="9" cy="7" r="2" fill="#fff"/><circle cx="15" cy="12" r="2" fill="#fff"/><circle cx="9" cy="17" r="2" fill="#fff"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- List -->
+        <ul class="prod-list">
+            <!-- repeated item -->
+        </ul>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a class="on">1</a><a>2</a><a>3</a><a>4</a><a>5</a>
+            <a class="next" aria-label="next">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.2"><polyline points="9 6 15 12 9 18"/></svg>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="socials"><img class="social-img" src="../assets/src/img/social.png" alt="Twitter, Instagram, YouTube"></div>
+            <div class="divider"></div>
+            <p class="contact">support@openui.design<br>+60 825 876<br>08:00 - 22:00 - Everyday</p>
+            <div class="divider"></div>
+            <nav class="nav-links"><a href="story.html">About</a><a href="contact.html">Contact</a><a href="blog.html">Blog</a></nav>
+            <p class="copyright">Copyright© OpenUI All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // generate 11 product rows to match the design
+        const list = document.querySelector('.prod-list');
+        const imgs = [19, 20, 21, 22, 23, 24, 25, 26, 27, 28];
+        list.innerHTML = imgs.map((n, i) => `
+            <li class="prod-row">
+                <a href="detail.html" class="row-thumb"><img src="../assets/src/img/${n}.png" alt=""></a>
+                <div class="row-info">
+                    <p class="brand">LAMEREI</p>
+                    <p class="title">Recycle Boucle Knit Cardigan Pink</p>
+                    <p class="price">$120</p>
+                    <p class="rating"><span class="star">★</span> 4.8 Ratings</p>
+                    <div class="sizes">
+                        <span class="size-label">Size</span>
+                        <span class="size">S</span><span class="size">M</span><span class="size">L</span>
+                    </div>
+                </div>
+                <button class="like" aria-label="like">
+                    <img src="../assets/src/img/heart.png" alt="like">
+                </button>
+            </li>`).join('');
+    </script>
+</body>
+
+</html>

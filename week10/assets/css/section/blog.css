@@ -1,0 +1,123 @@
+.blog-title {
+    margin-top: 24px;
+}
+
+/* category tags */
+.blog-tags {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 24px 16px;
+}
+
+.blog-tags span {
+    flex: 0 0 auto;
+    padding: 8px 18px;
+    font-size: 14px;
+    color: var(--body);
+    background: var(--input-bg);
+    border-radius: 20px;
+}
+
+.blog-tags span.on {
+    color: var(--white);
+    background: var(--title-active);
+}
+
+/* posts */
+.post-list {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.post-img {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.post-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bookmark {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookmark svg {
+    width: 18px;
+    height: 18px;
+}
+
+.post-head {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 14px;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.post-meta .ptags {
+    display: flex;
+    gap: 8px;
+}
+
+.post-meta .ptags em {
+    padding: 4px 10px;
+    font-size: 13px;
+    color: var(--body);
+    background: var(--input-bg);
+    border-radius: 20px;
+}
+
+.post-meta .ptime {
+    font-size: 13px;
+    color: var(--placeholder);
+}
+
+/* load more */
+.blog-loadmore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 220px;
+    height: 56px;
+    margin: 32px auto 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--title-active);
+    border: 1px solid var(--line);
+}
+
+.blog-loadmore svg {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Manrope:wght@300;400;500&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquareNeo@1.0/nanumsquareneo.css");
+
+:root {
+    /* fonts */
+    --mainfont: 'Tenor Sans', sans-serif;
+    --displayfont: 'NanumSquareNeo-Variable', 'Tenor Sans', sans-serif;
+    --badgefont: 'Manrope', sans-serif;
+
+    /* GrayScale */
+    --title-active: #000000;
+    --title-active2: #14142B;
+    --body: #333333;
+    --label: #555555;
+    --placeholder: #888888;
+    --line: #EFEFEF;
+    --input-bg: #F9F9F9;
+    --off-white: #FCFCFC;
+    --white: #FFFFFF;
+
+    /* Brand */
+    --primary: #DD8560;
+    --header-bg: #E7EAEF;
+
+    color: var(--body);
+    font-family: var(--mainfont);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}

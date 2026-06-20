@@ -1,0 +1,485 @@
+/* ===== Banner ===== */
+.banner {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    background: #d9d9d9;
+}
+
+.banner-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-copy {
+    position: absolute;
+    left: 42px;
+    top: 230px;
+}
+
+.banner-copy h1 {
+    font-family: var(--displayfont);
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.13;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--body);
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+}
+
+.banner-btn {
+    position: absolute;
+    left: 61px;
+    bottom: 60px;
+    width: 253px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--off-white);
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+}
+
+.banner-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 24px;
+}
+
+.banner-dots span {
+    border-color: var(--off-white);
+}
+
+.banner-dots span.on {
+    background: var(--off-white);
+}
+
+/* ===== New Arrival ===== */
+.new-arrival {
+    padding-top: 8px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin: 18px 0 24px;
+    position: relative;
+}
+
+.tabs li {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--placeholder);
+    opacity: 0.8;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabs li.on {
+    color: #212806;
+    opacity: 1;
+}
+
+.tabs li.on::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 4px;
+    height: 4px;
+    background: var(--primary);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0 16px;
+}
+
+.product-card .thumb {
+    aspect-ratio: 165 / 200;
+    background: #efefef;
+    overflow: hidden;
+}
+
+.product-card .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card .name {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--body);
+}
+
+.product-card .price {
+    font-size: 15px;
+    text-align: center;
+    color: var(--primary);
+}
+
+.load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 28px auto 0;
+    width: 155px;
+    height: 48px;
+    font-size: 16px;
+    color: var(--title-active);
+}
+
+.load-more svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* ===== Brands ===== */
+.brands {
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.brand-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--body);
+}
+
+.brand-row span {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.b-prada {
+    font-weight: 600;
+    letter-spacing: 3px !important;
+}
+
+.b-burberry {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+}
+
+.b-boss {
+    font-weight: 700;
+    letter-spacing: 2px !important;
+}
+
+.b-cartier,
+.b-tiffany {
+    font-family: var(--mainfont);
+    font-style: italic;
+}
+
+.b-gucci {
+    font-family: var(--mainfont);
+    letter-spacing: 5px !important;
+    font-size: 18px !important;
+}
+
+/* ===== Collections ===== */
+.collections {
+    padding-bottom: 16px;
+}
+
+.coll-october {
+    position: relative;
+    height: 240px;
+    margin-top: 24px;
+    overflow: hidden;
+}
+
+.coll-october img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coll-october .big {
+    position: absolute;
+    right: 16px;
+    top: 0;
+    font-family: var(--displayfont);
+    font-weight: 800;
+    font-size: 163px;
+    line-height: 244px;
+    letter-spacing: -30px;
+    color: var(--body);
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+}
+
+.coll-october .month {
+    position: absolute;
+    right: 28px;
+    top: 100px;
+    font-family: var(--displayfont);
+    font-weight: 700;
+    font-size: 42px;
+    color: var(--off-white);
+}
+
+.coll-october .cap {
+    position: absolute;
+    right: 30px;
+    top: 152px;
+    font-size: 13px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--off-white);
+}
+
+.coll-autumn {
+    position: relative;
+    width: 259px;
+    height: 296px;
+    margin: 40px auto 0;
+    overflow: hidden;
+}
+
+.coll-autumn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coll-autumn .title {
+    position: absolute;
+    left: 50%;
+    top: 36px;
+    transform: translateX(-50%);
+    font-family: var(--displayfont);
+    font-weight: 700;
+    font-size: 42px;
+    color: var(--body);
+    mix-blend-mode: multiply;
+    opacity: 0.85;
+}
+
+.coll-autumn .cap {
+    position: absolute;
+    left: 50%;
+    top: 88px;
+    transform: translateX(-50%);
+    font-size: 11px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--body);
+    white-space: nowrap;
+}
+
+/* ===== Video ===== */
+.video {
+    position: relative;
+    height: 176px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.video .play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.video .play svg {
+    width: 14px;
+    height: 14px;
+    margin-left: 2px;
+}
+
+/* ===== Just for You ===== */
+.just-for-you {
+    padding-top: 40px;
+}
+
+.jfy-scroll {
+    display: flex;
+    gap: 26px;
+    overflow-x: auto;
+    padding: 24px 16px 16px;
+}
+
+.jfy-card {
+    flex: 0 0 255px;
+}
+
+.jfy-card .thumb {
+    height: 312px;
+    background: #efefef;
+    overflow: hidden;
+}
+
+.jfy-card .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jfy-card .name {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--body);
+}
+
+.jfy-card .price {
+    font-size: 16px;
+    text-align: center;
+    color: var(--primary);
+}
+
+.just-for-you .dots {
+    margin-top: 8px;
+}
+
+/* ===== Trending ===== */
+.trending {
+    padding: 40px 16px 0;
+}
+
+.trending .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.trending .tags span {
+    padding: 8px 10px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: var(--body);
+    background: var(--input-bg);
+    border-radius: 30px;
+}
+
+/* ===== Open Fashion intro ===== */
+.of-intro {
+    margin-top: 48px;
+    padding: 40px 16px;
+    text-align: center;
+    background: rgba(242, 242, 242, 0.5);
+}
+
+.of-intro .lead {
+    max-width: 285px;
+    margin: 24px auto 0;
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--label);
+}
+
+.of-intro .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 24px;
+    margin-top: 36px;
+}
+
+.of-intro .features li {
+    text-align: center;
+}
+
+.of-intro .features .ico {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 8px;
+    height: 40px;
+}
+
+.of-intro .features .ico img {
+    width: auto;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+}
+
+.of-intro .features p {
+    font-size: 13px;
+    line-height: 1.54;
+    color: var(--label);
+}
+
+/* ===== Follow Us ===== */
+.follow-us {
+    padding: 32px 16px 40px;
+}
+
+.insta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.insta-grid figure {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.insta-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.insta-grid figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px 9px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--white);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
