@@ -1,4 +1,4 @@
-button,
+﻿button,
 a {
     cursor: pointer;
 }
@@ -15,7 +15,7 @@ body {
 .container {
     position: relative;
     width: 375px;
-    background-color: var(--off-white);
+    background-color: #FCFCFC;
     overflow: hidden;
 }
 
@@ -42,14 +42,14 @@ input {
     line-height: 40px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: var(--title-active);
+    color: #000000;
 }
 
 .divider {
     width: 125px;
     height: 1px;
     margin: 0 auto;
-    background: var(--label);
+    background: #555555;
     position: relative;
 }
 
@@ -60,8 +60,8 @@ input {
     left: 50%;
     width: 7px;
     height: 7px;
-    background: var(--off-white);
-    border: 1px solid var(--label);
+    background: #FCFCFC;
+    border: 1px solid #555555;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
@@ -75,10 +75,10 @@ input {
 .dots span {
     width: 6px;
     height: 6px;
-    border: 1px solid var(--placeholder);
+    border: 1px solid #888888;
     transform: rotate(45deg);
 }
 
 .dots span.on {
-    background: var(--placeholder);
+    background: #888888;
 }

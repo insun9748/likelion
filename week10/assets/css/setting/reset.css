@@ -1,4 +1,4 @@
-*,
+﻿*,
 *:before,
 *:after {
     -webkit-box-sizing: border-box;
@@ -42,7 +42,7 @@ button,
 select,
 table,
 textarea {
-    font-family: var(--mainfont);
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 a,

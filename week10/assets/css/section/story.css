@@ -1,4 +1,4 @@
-.story-title {
+﻿.story-title {
     margin-top: 24px;
 }
 
@@ -12,7 +12,7 @@
 .story-body p {
     font-size: 16px;
     line-height: 1.5;
-    color: var(--body);
+    color: #333333;
 }
 
 .story-img {
@@ -37,7 +37,7 @@
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
-    color: var(--placeholder);
+    color: #888888;
 }
 
 .su-form {
@@ -48,9 +48,9 @@
     width: 100%;
     padding: 12px 0;
     font-size: 16px;
-    color: var(--body);
+    color: #333333;
     background: transparent;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid #EFEFEF;
 }
 
 .submit-bar {
@@ -62,8 +62,8 @@
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--white);
-    background: var(--title-active);
+    color: #FFFFFF;
+    background: #000000;
 }
 
 .submit-bar svg {

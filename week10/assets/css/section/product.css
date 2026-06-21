@@ -1,4 +1,4 @@
-/* ===== Product list bar ===== */
+﻿/* ===== Product list bar ===== */
 .list-bar {
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
 .list-bar .count {
     font-size: 16px;
     letter-spacing: 1px;
-    color: var(--body);
+    color: #333333;
 }
 
 .list-bar .controls {
@@ -24,8 +24,8 @@
     gap: 6px;
     padding: 6px 12px;
     font-size: 14px;
-    color: var(--body);
-    background: var(--input-bg);
+    color: #333333;
+    background: #F9F9F9;
     border-radius: 20px;
 }
 
@@ -73,29 +73,29 @@
 .row-info .brand {
     font-size: 16px;
     letter-spacing: 2px;
-    color: var(--body);
+    color: #333333;
 }
 
 .row-info .title {
     margin-top: 2px;
     font-size: 14px;
-    color: var(--body);
+    color: #333333;
 }
 
 .row-info .price {
     margin-top: 4px;
     font-size: 15px;
-    color: var(--primary);
+    color: #DD8560;
 }
 
 .row-info .rating {
     margin-top: 6px;
     font-size: 13px;
-    color: var(--body);
+    color: #333333;
 }
 
 .row-info .rating .star {
-    color: var(--primary);
+    color: #DD8560;
 }
 
 .row-info .sizes {
@@ -107,7 +107,7 @@
 
 .row-info .size-label {
     font-size: 13px;
-    color: var(--label);
+    color: #555555;
     margin-right: 2px;
 }
 
@@ -118,8 +118,8 @@
     align-items: center;
     justify-content: center;
     font-size: 12px;
-    color: var(--body);
-    border: 1px solid var(--line);
+    color: #333333;
+    border: 1px solid #EFEFEF;
     border-radius: 50%;
 }
 
@@ -153,13 +153,13 @@
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    color: var(--body);
-    background: var(--input-bg);
+    color: #333333;
+    background: #F9F9F9;
 }
 
 .pagination a.on {
-    color: var(--white);
-    background: var(--title-active);
+    color: #FFFFFF;
+    background: #000000;
 }
 
 .pagination .next {

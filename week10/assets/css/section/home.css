@@ -1,4 +1,4 @@
-/* ===== Banner ===== */
+﻿/* ===== Banner ===== */
 .banner {
     position: relative;
     height: 600px;
@@ -21,13 +21,13 @@
 }
 
 .banner-copy h1 {
-    font-family: var(--displayfont);
+    font-family: 'NanumSquareNeo-Variable', 'Tenor Sans', sans-serif;
     font-weight: 700;
     font-size: 38px;
     line-height: 1.13;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: var(--body);
+    color: #333333;
     mix-blend-mode: multiply;
     opacity: 0.75;
 }
@@ -43,7 +43,7 @@
     justify-content: center;
     font-size: 16px;
     text-transform: uppercase;
-    color: var(--off-white);
+    color: #FCFCFC;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(2px);
     border-radius: 30px;
@@ -57,11 +57,11 @@
 }
 
 .banner-dots span {
-    border-color: var(--off-white);
+    border-color: #FCFCFC;
 }
 
 .banner-dots span.on {
-    background: var(--off-white);
+    background: #FCFCFC;
 }
 
 /* ===== New Arrival ===== */
@@ -80,7 +80,7 @@
 .tabs li {
     font-size: 14px;
     letter-spacing: 1px;
-    color: var(--placeholder);
+    color: #888888;
     opacity: 0.8;
     cursor: pointer;
     position: relative;
@@ -98,7 +98,7 @@
     bottom: -10px;
     width: 4px;
     height: 4px;
-    background: var(--primary);
+    background: #DD8560;
     transform: translateX(-50%) rotate(45deg);
 }
 
@@ -126,13 +126,13 @@
     font-size: 12px;
     line-height: 1.5;
     text-align: center;
-    color: var(--body);
+    color: #333333;
 }
 
 .product-card .price {
     font-size: 15px;
     text-align: center;
-    color: var(--primary);
+    color: #DD8560;
 }
 
 .load-more {
@@ -144,7 +144,7 @@
     width: 155px;
     height: 48px;
     font-size: 16px;
-    color: var(--title-active);
+    color: #000000;
 }
 
 .load-more svg {
@@ -164,7 +164,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--body);
+    color: #333333;
 }
 
 .brand-row span {
@@ -189,12 +189,12 @@
 
 .b-cartier,
 .b-tiffany {
-    font-family: var(--mainfont);
+    font-family: 'Tenor Sans', sans-serif;
     font-style: italic;
 }
 
 .b-gucci {
-    font-family: var(--mainfont);
+    font-family: 'Tenor Sans', sans-serif;
     letter-spacing: 5px !important;
     font-size: 18px !important;
 }
@@ -221,12 +221,12 @@
     position: absolute;
     right: 16px;
     top: 0;
-    font-family: var(--displayfont);
+    font-family: 'NanumSquareNeo-Variable', 'Tenor Sans', sans-serif;
     font-weight: 800;
     font-size: 163px;
     line-height: 244px;
     letter-spacing: -30px;
-    color: var(--body);
+    color: #333333;
     mix-blend-mode: multiply;
     opacity: 0.5;
 }
@@ -235,10 +235,10 @@
     position: absolute;
     right: 28px;
     top: 100px;
-    font-family: var(--displayfont);
+    font-family: 'NanumSquareNeo-Variable', 'Tenor Sans', sans-serif;
     font-weight: 700;
     font-size: 42px;
-    color: var(--off-white);
+    color: #FCFCFC;
 }
 
 .coll-october .cap {
@@ -248,7 +248,7 @@
     font-size: 13px;
     letter-spacing: 6px;
     text-transform: uppercase;
-    color: var(--off-white);
+    color: #FCFCFC;
 }
 
 .coll-autumn {
@@ -270,10 +270,10 @@
     left: 50%;
     top: 36px;
     transform: translateX(-50%);
-    font-family: var(--displayfont);
+    font-family: 'NanumSquareNeo-Variable', 'Tenor Sans', sans-serif;
     font-weight: 700;
     font-size: 42px;
-    color: var(--body);
+    color: #333333;
     mix-blend-mode: multiply;
     opacity: 0.85;
 }
@@ -286,7 +286,7 @@
     font-size: 11px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: var(--body);
+    color: #333333;
     white-space: nowrap;
 }
 
@@ -366,13 +366,13 @@
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    color: var(--body);
+    color: #333333;
 }
 
 .jfy-card .price {
     font-size: 16px;
     text-align: center;
-    color: var(--primary);
+    color: #DD8560;
 }
 
 .just-for-you .dots {
@@ -395,8 +395,8 @@
     padding: 8px 10px;
     font-size: 14px;
     letter-spacing: 0.5px;
-    color: var(--body);
-    background: var(--input-bg);
+    color: #333333;
+    background: #F9F9F9;
     border-radius: 30px;
 }
 
@@ -413,7 +413,7 @@
     margin: 24px auto 0;
     font-size: 14px;
     line-height: 1.43;
-    color: var(--label);
+    color: #555555;
 }
 
 .of-intro .features {
@@ -444,7 +444,7 @@
 .of-intro .features p {
     font-size: 13px;
     line-height: 1.54;
-    color: var(--label);
+    color: #555555;
 }
 
 /* ===== Follow Us ===== */
@@ -480,6 +480,6 @@
     font-size: 14px;
     letter-spacing: 1px;
     text-align: center;
-    color: var(--white);
+    color: #FFFFFF;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }

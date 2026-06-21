@@ -1,5 +1,5 @@
-.container.menu {
-    background: var(--white);
+﻿.container.menu {
+    background: #FFFFFF;
     padding: 0 16px;
     min-height: 700px;
 }
@@ -29,17 +29,17 @@
     font-size: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--placeholder);
+    color: #888888;
 }
 
 .menu-segments li.on {
-    color: var(--title-active);
+    color: #000000;
 }
 
 .seg-line {
     position: relative;
     height: 1px;
-    background: var(--line);
+    background: #EFEFEF;
     margin: 12px 0 8px;
 }
 
@@ -49,7 +49,7 @@
     top: 50%;
     width: 7px;
     height: 7px;
-    background: var(--primary);
+    background: #DD8560;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
@@ -63,8 +63,8 @@
     justify-content: space-between;
     padding: 18px 0;
     font-size: 18px;
-    color: var(--body);
-    border-bottom: 1px solid var(--line);
+    color: #333333;
+    border-bottom: 1px solid #EFEFEF;
 }
 
 .menu-cats svg {
@@ -84,7 +84,7 @@
     align-items: center;
     gap: 16px;
     font-size: 16px;
-    color: var(--body);
+    color: #333333;
 }
 
 .menu-extra svg {

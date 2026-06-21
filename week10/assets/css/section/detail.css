@@ -1,4 +1,4 @@
-/* ===== Gallery ===== */
+﻿/* ===== Gallery ===== */
 .gallery {
     position: relative;
     height: 390px;
@@ -39,11 +39,11 @@
 }
 
 .gallery-dots span {
-    border-color: var(--placeholder);
+    border-color: #888888;
 }
 
 .gallery-dots span.on {
-    background: var(--placeholder);
+    background: #888888;
 }
 
 /* ===== Info ===== */
@@ -70,13 +70,13 @@
 .detail-info .title {
     margin-top: 6px;
     font-size: 16px;
-    color: var(--body);
+    color: #333333;
 }
 
 .detail-info .price {
     margin-top: 4px;
     font-size: 16px;
-    color: var(--primary);
+    color: #DD8560;
 }
 
 .opt-row {
@@ -88,7 +88,7 @@
 
 .opt-label {
     font-size: 14px;
-    color: var(--label);
+    color: #555555;
     width: 40px;
 }
 
@@ -121,15 +121,15 @@
     align-items: center;
     justify-content: center;
     font-size: 13px;
-    color: var(--body);
-    border: 1px solid var(--line);
+    color: #333333;
+    border: 1px solid #EFEFEF;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .detail-info .size.on {
-    border-color: var(--title-active);
-    color: var(--title-active);
+    border-color: #000000;
+    color: #000000;
 }
 
 /* ===== Basket bar ===== */
@@ -147,8 +147,8 @@
     gap: 10px;
     font-size: 16px;
     text-transform: uppercase;
-    color: var(--white);
-    background: var(--title-active);
+    color: #FFFFFF;
+    background: #000000;
 }
 
 .basket-bar .add .plus {
@@ -157,7 +157,7 @@
 
 .basket-bar .fav {
     width: 64px;
-    background: var(--title-active);
+    background: #000000;
     border-left: 1px solid rgba(255, 255, 255, 0.15);
     display: flex;
     align-items: center;
@@ -179,7 +179,7 @@
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--title-active);
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -190,7 +190,7 @@
 .detail-text p {
     font-size: 14px;
     line-height: 1.6;
-    color: var(--body);
+    color: #333333;
 }
 
 .care-icons {
@@ -205,12 +205,12 @@
     align-items: center;
     gap: 14px;
     font-size: 14px;
-    color: var(--body);
+    color: #333333;
 }
 
 .care-icons .i {
     font-size: 18px;
-    color: var(--label);
+    color: #555555;
 }
 
 /* ===== Accordion ===== */
@@ -219,7 +219,7 @@
 }
 
 .acc-item {
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid #EFEFEF;
 }
 
 .acc-head {
@@ -229,7 +229,7 @@
     gap: 12px;
     padding: 16px 0;
     font-size: 14px;
-    color: var(--body);
+    color: #333333;
     text-align: left;
 }
 
@@ -249,7 +249,7 @@
     padding: 0 0 16px 30px;
     font-size: 13px;
     line-height: 1.5;
-    color: var(--label);
+    color: #555555;
 }
 
 .acc-item.open .acc-body {

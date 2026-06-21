@@ -1,5 +1,5 @@
-.container.search {
-    background: var(--white);
+﻿.container.search {
+    background: #FFFFFF;
     padding: 0 16px;
     min-height: 600px;
 }
@@ -9,7 +9,7 @@
     align-items: center;
     gap: 12px;
     padding: 24px 0 16px;
-    border-bottom: 1px solid var(--title-active);
+    border-bottom: 1px solid #000000;
 }
 
 .search-bar .s-ico {
@@ -21,7 +21,7 @@
 .search-bar input {
     flex: 1;
     font-size: 16px;
-    color: var(--body);
+    color: #333333;
     background: transparent;
 }
 
@@ -38,12 +38,12 @@
 .popular-label {
     margin: 24px 0 8px;
     font-size: 14px;
-    color: var(--placeholder);
+    color: #888888;
 }
 
 .popular-list li a {
     display: block;
     padding: 12px 0;
     font-size: 16px;
-    color: var(--body);
+    color: #333333;
 }
